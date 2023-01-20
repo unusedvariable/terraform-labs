@@ -1,7 +1,9 @@
 variable "access_key" {
+  type        = string
   description = "Access key to AWS console"
 }
 variable "secret_key" {
+  type        = string
   description = "Secret key to AWS console"
 }
 
@@ -31,6 +33,6 @@ variable "number_of_instances" {
 }
 
 
-variable "ami_key_pair_name" {
-  default = "wsl-mamun"
+variable "key_pair" {
+  default = "mamun-wsl"
 }
